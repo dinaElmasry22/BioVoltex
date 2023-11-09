@@ -1,0 +1,46 @@
+@use '../../index.scss' as *;
+@use '../../App.scss' as *;
+
+
+
+.any-questions {
+    @include layout;
+    justify-content: space-around;
+    color: var(--color-text);
+    font-family: Poppins;
+    h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .ny-questions__right {
+        width: 487px;
+        .form-control {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        label {
+            margin-bottom: 8px;
+        }
+        input[type="text"],textarea{
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            padding: 10px;
+            resize: none;
+            font-size: 16px;
+        }
+        input[type="text"]::placeholder {
+            opacity: 70%;
+            font-weight: 300;
+        }
+        button[type="submit"] {
+            font-size: 24px;
+            font-weight: 400;
+            color: #FFF;
+            background-color: var(--color-bg);
+            border: none;
+            outline: none;
+            padding: 12px ;
+        }
+    }
+    }
+}

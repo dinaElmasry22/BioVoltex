@@ -1,0 +1,48 @@
+@use '../../index.scss' as *;
+@use '../../App.scss' as *;
+
+
+.navbar {
+    color: var(--color-text);
+    @include layout;
+    justify-content: space-between;
+    margin: 10px 36px;
+
+    .navbar__left {
+        .logo {
+            @include linkStyle;
+            margin-right: 20px;
+            font: {
+                family: var(--logo-text);
+                size: 36px;
+            }
+        }
+
+        .navbar__discover-link a {
+            @include linkStyle;
+            @include layout;
+            margin-left: 24px;
+
+            svg {
+                margin-left: 8px
+            }
+        }
+
+        @include layout;
+    }
+
+    .navbar__right {
+        @include layout;
+        gap: 15px;
+        a {
+            @include linkStyle;
+            
+        }
+    }
+
+    .separator {
+        width: 1px;
+        height: 43px;
+        background: #00485E;
+    }
+}

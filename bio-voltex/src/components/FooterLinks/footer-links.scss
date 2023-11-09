@@ -1,0 +1,58 @@
+@use '../../index.scss' as *;
+@use '../../App.scss' as *;
+
+
+
+
+.footer-links {
+    margin: 6rem 3rem;
+
+    .logo {
+        @include linkStyle;
+        margin-right: 20px;
+        font: {
+            family: var(--logo-text);
+            size: 36px;
+        }
+    }
+
+    .footer-links__container {
+        margin-top: 25px;
+        color: var(--color-subtext);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        p {
+            width: 472px;
+        }
+
+        .social-media__contact {
+            margin: {
+                top: 20px;
+                bottom: 20px;
+            }
+
+            ;
+
+            img {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            margin-bottom: 20px;
+
+            a {
+                @include linkStyle;
+                color: var(--color-subtext);
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,72 @@
+:root {
+  --font-family: "Poppins";
+  --logo-text: "Source Serif Pro";
+  --color-bg:#006E7C ;
+  --color-text:#00485E ;
+  --color-subtext:rgba(0, 72, 94, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.section__padding {
+  padding: 3rem;
+}
+
+.section__margin {
+  margin: 3rem;
+}
+
+.any-questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color-text);
+  font-family: Poppins;
+}
+.any-questions h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.any-questions .ny-questions__right {
+  width: 487px;
+}
+.any-questions .ny-questions__right .form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.any-questions .ny-questions__right .form-control label {
+  margin-bottom: 8px;
+}
+.any-questions .ny-questions__right .form-control input[type=text], .any-questions .ny-questions__right .form-control textarea {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  resize: none;
+  font-size: 16px;
+}
+.any-questions .ny-questions__right .form-control input[type=text]::-moz-placeholder {
+  opacity: 70%;
+  font-weight: 300;
+}
+.any-questions .ny-questions__right .form-control input[type=text]::placeholder {
+  opacity: 70%;
+  font-weight: 300;
+}
+.any-questions .ny-questions__right .form-control button[type=submit] {
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFF;
+  background-color: var(--color-bg);
+  border: none;
+  outline: none;
+  padding: 12px;
+}/*# sourceMappingURL=any-questions.css.map */

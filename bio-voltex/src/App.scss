@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;    
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section__padding {
+    padding: 3rem ;
+}
+
+.section__margin {
+    margin: 3rem ;
+}
+
+@mixin layout {
+    display: flex;
+    align-items: center;
+}
+
+@mixin linkStyle {
+    text-decoration: none;
+    color: var(--color-text)
+}
+
+@mixin breakPoints ($point) {
+    @if $point == mobile {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $point == small {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $point == medium {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $point == large {
+        @media (min-width: 1200px) {
+            
+            @content;
+        }
+
+    }
+
+}

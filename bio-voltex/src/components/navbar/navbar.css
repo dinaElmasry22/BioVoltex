@@ -1,0 +1,73 @@
+:root {
+  --font-family: "Poppins";
+  --logo-text: "Source Serif Pro";
+  --color-bg:#006E7C ;
+  --color-text:#00485E ;
+  --color-subtext:rgba(0, 72, 94, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section__padding {
+  padding: 3rem;
+}
+
+.section__margin {
+  margin: 3rem;
+}
+
+.navbar {
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 36px;
+}
+.navbar .navbar__left {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__left .logo {
+  text-decoration: none;
+  color: var(--color-text);
+  margin-right: 20px;
+  font-family: var(--logo-text);
+  font-size: 36px;
+}
+.navbar .navbar__left .navbar__discover-link a {
+  text-decoration: none;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+.navbar .navbar__left .navbar__discover-link a svg {
+  margin-left: 8px;
+}
+.navbar .navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navbar .navbar__right a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+.navbar .separator {
+  width: 1px;
+  height: 43px;
+  background: #00485E;
+}/*# sourceMappingURL=navbar.css.map */
