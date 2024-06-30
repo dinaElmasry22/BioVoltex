@@ -3,28 +3,71 @@
 
 
 .navbar {
-    color: var(--color-text);
+    
+    background: var(--color-bg);
+
+    color: white;
     @include layout;
     justify-content: space-between;
-    margin: 10px 36px;
+    padding: 10px 30px;
 
     .navbar__left {
         .logo {
             @include linkStyle;
             margin-right: 20px;
+            color: white;
+
             font: {
                 family: var(--logo-text);
-                size: 36px;
+                size: 40px;
             }
+
         }
 
-        .navbar__discover-link a {
-            @include linkStyle;
-            @include layout;
-            margin-left: 24px;
+        ul {
+            list-style: none;
 
-            svg {
-                margin-left: 8px
+            li {
+                display: inline-block;
+                text-transform: uppercase;
+
+                a {
+                    @include linkStyle;
+                    @include layout;
+                    margin-left: 12px;
+                    margin-right: 12px;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: white;
+
+                    &:focus,
+                    &:active {
+                        border-bottom: 2px solid #fff;
+                    }
+
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: white;
+                        transition: width 0.4s ease-in-out;
+                        -webkit-transition: width 0.4s ease-in-out;
+                        -moz-transition: width 0.4s ease-in-out;
+                        -ms-transition: width 0.4s ease-in-out;
+                        -o-transition: width 0.4s ease-in-out;
+                    }
+
+                    &:hover {
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
 
@@ -34,15 +77,17 @@
     .navbar__right {
         @include layout;
         gap: 15px;
+
         a {
             @include linkStyle;
-            
+            color: white;
+
         }
     }
 
     .separator {
         width: 1px;
         height: 43px;
-        background: #00485E;
+        background: white;
     }
 }

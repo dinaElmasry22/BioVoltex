@@ -1,8 +1,6 @@
 @use '../../index.scss' as *;
 @use '../../App.scss' as *;
 
-
-
 .any-questions {
     @include layout;
     justify-content: space-around;
@@ -21,13 +19,19 @@
         margin-bottom: 24px;
         label {
             margin-bottom: 8px;
+            color: var(--color-text);
         }
         input[type="text"],textarea{
             border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
             padding: 10px;
             resize: none;
             font-size: 16px;
-        }
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+}
         input[type="text"]::placeholder {
             opacity: 70%;
             font-weight: 300;

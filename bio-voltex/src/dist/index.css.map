@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["index.scss"],"sourcesContent":[":root {\r\n    --font-family: 'Poppins';\r\n    --logo-text: 'Source Serif Pro';\r\n    --color-bg:#009589 ;\r\n    --color-text:#009589;\r\n    --color-subtext: #00958980;\r\n}"],"file":"index.css"}

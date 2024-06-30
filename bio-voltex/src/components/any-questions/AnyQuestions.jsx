@@ -12,8 +12,8 @@ const AnyQuestions = () => {
       <div className='ny-questions__right'>
       <form action="">
         <div className="form-control">
-          <label htmlFor="subject">Subject</label>
-          <input type="text" name="subject" placeholder='Subject'/>
+          <label htmlFor="subject">Your E-Mail</label>
+          <input type="text" name="subject" placeholder='abcd.email.com'/>
         </div>
         <div className="form-control">
           <label htmlFor="subject">Your Message</label>

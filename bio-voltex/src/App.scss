@@ -6,6 +6,7 @@
     font-family: var(--font-family);
     font-size: 20px;
     font-weight: 400;
+    user-select: none;
 }
 
 .section__padding {
@@ -32,21 +33,14 @@
             @content;
         }
     }
-
-    @else if $point == small {
-        @media (min-width: 768px) and (max-width: 991px) {
-            @content;
-        }
-    }
-
     @else if $point == medium {
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (min-width: 992px) and (max-width: 1439px) {
             @content;
         }
     }
 
     @else if $point == large {
-        @media (min-width: 1200px) {
+        @media (min-width: 1440px) {
             
             @content;
         }

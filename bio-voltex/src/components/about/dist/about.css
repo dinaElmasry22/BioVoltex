@@ -1,0 +1,50 @@
+@use '../../index.scss' as *;
+@use '../../App.scss' as *;
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-section .left {
+  max-width: 50%;
+}
+
+.about-section .left .title {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.about-section .left .title h2 {
+  font-family: Source Serif Pro;
+  font-size: 55px;
+  background: linear-gradient(180deg, #00485E 0%, #009589 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-section .left .title span {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.about-section .left p {
+  color: var(--color-text);
+}
+
+.about-section .right {
+  width: 45%;
+}
+
+.about-section .right img {
+  width: 100%;
+  top: 208px;
+  left: 1142px;
+}
+
+/*# sourceMappingURL=about.css.map */

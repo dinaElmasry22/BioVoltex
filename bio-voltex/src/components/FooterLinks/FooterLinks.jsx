@@ -8,7 +8,7 @@ import twitter from "../../assets/twitter-icon.svg";
 
 const FooterLinks = () => {
   return (
-    <div className="footer-links">
+    <div className="footer-links section__margin">
       <a href="#" className="logo">BIOVOLTEX</a>
       <div className="footer-links__container">
         <div>
@@ -52,8 +52,8 @@ const FooterLinks = () => {
             <a href="#">Privacy Policy</a>
           </li>
           <li>
-            <a href="#">EN</a> /{" "}
-            <a href="#" className="lang">
+            <a href="#" className="lang active">EN</a> /{" "}
+            <a href="#" className="lang " >
               AR
             </a>
           </li>

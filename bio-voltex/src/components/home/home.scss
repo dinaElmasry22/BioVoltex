@@ -1,0 +1,781 @@
+@use '../../index.scss' as *;
+@use '../../App.scss' as *;
+
+.home-page {
+    .welcome-sec {
+        position: relative;
+        top: -2px;
+
+        svg {
+            width: 100%;
+        }
+
+        .content {
+            position: absolute;
+            height: 88vh;
+            top: 0;
+            z-index: 1;
+            padding: 1.25rem;
+            color: #fff;
+            @include layout;
+            justify-content: center;
+
+            .cont {
+                width: 94%;
+                @include layout;
+                justify-content: space-between;
+
+                .left {
+                    width: 42%;
+
+                    h1 {
+                        font-size: 4rem;
+
+                    }
+
+                    p {
+                        font-size: 2rem;
+
+                    }
+
+                    button {
+                        width: 443px;
+                        height: 59px;
+                        background: #FFFFFF;
+                        border: 1px solid var(--color-bg);
+                        border-radius: 43px;
+                        -webkit-border-radius: 43px;
+                        -moz-border-radius: 43px;
+                        -ms-border-radius: 43px;
+                        -o-border-radius: 43px;
+                        font-size: 32px;
+                        color: var(--color-bg);
+                        margin-top: 2rem;
+                        margin-left: 16rem;
+                    }
+                }
+
+                .right {
+                    width: 38%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .profit-sec {
+        position: relative;
+
+        .flex-profit-section {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                width: 53%;
+
+                .ribbon {
+                    position: relative;
+                    left: -3rem;
+                    font-size: 3rem;
+                    width: 120%;
+                    text-align: center;
+                    color: #fff;
+                    --r: .8em;
+                    padding-right: calc(var(--r) + .25em);
+                    line-height: 1.8;
+                    clip-path: polygon(-100vw 0, 100% 0, calc(100% - var(--r)) 50%, 100% 100%, -100vw 100%);
+                    margin-bottom: 3rem;
+                    border-image: conic-gradient(#009589 0 0) fill 0;
+                    box-shadow: 0px 4px 33px 0px #009589;
+                }
+
+
+                ol {
+                    list-style: none;
+                    counter-reset: my-counter li;
+
+                    li {
+                        font-size: 1.8rem;
+                        margin-bottom: 1rem;
+                        position: relative;
+                        padding-left: 3rem;
+                        color: var(--color-bg);
+                        margin-bottom: 2.2rem;
+
+                        &::before {
+                            position: absolute;
+                            left: 0px;
+                            content: counter(my-counter);
+                            counter-increment: my-counter;
+                            color: white;
+                            background-color: var(--color-bg);
+                            @include layout;
+                            justify-content: center;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            width: 40px;
+                            height: 40px;
+                            font-size: 32px;
+                        }
+                    }
+                }
+
+
+            }
+
+            .right {
+                width: 45%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    section {
+        margin: 4rem 6rem;
+
+        .row {
+            @include layout;
+            justify-content: space-between;
+
+            .col {
+                width: calc(100% / 3 - 16px);
+                min-height: 850px;
+                max-height: 1500px;
+                text-align: center;
+                box-shadow: 0px 0px 8px 0px #00000040;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: stretch;
+                padding: 0.5rem 1.5rem;
+                color: var(--color-bg);
+                position: relative;
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+
+            
+
+                h3 {
+                    font-family: Poppins;
+                    font-size: 40px;
+                    font-weight: 600;
+
+                }
+
+                p {
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 36px;
+                    text-align: center;
+                    
+                }
+
+                a {
+                    @include linkStyle;
+                    margin-left: 1rem;
+                }
+
+                span {
+                    font-weight: bold;
+                }
+
+
+
+
+            }
+        }
+    }
+
+    .numbers {
+        background-color: rgb(0, 149, 137, 0.06);
+        padding: 4rem 3rem;
+        @include layout;
+        flex-direction: column;
+
+        color: var(--color-bg);
+        text-align: center;
+
+        h2 {
+            font-size: 64px;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        .row {
+            width: 1000px;
+            @include layout;
+            justify-content: space-between;
+
+            span {
+                color: #006E7C;
+                font-size: 46px;
+                font-weight: 800;
+
+                span {
+                    font-size: 36px;
+                    font-weight: 200;
+                }
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .paying {
+        width: 57%;
+        margin: 3rem 6rem;
+        color: var(--color-bg);
+
+        label {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 0rem
+        }
+
+        p {
+            font-family: Poppins;
+            margin-bottom: 1rem;
+            font-size: 32px;
+        }
+
+        .error {
+            display: block;
+            margin-bottom: 1.5rem;
+            color: rgb(185, 0, 0);
+        }
+
+        input {
+            border: none;
+            border-bottom: 2px solid var(--color-bg);
+            padding: 0.4rem;
+            width: 360px;
+            color: var(--color-bg);
+            display: block;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: #00485E40;
+
+            }
+        }
+
+        .row {
+            @include layout;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .radio-btn {
+            @include layout;
+
+            div {
+                width: 350px;
+            }
+
+            input {
+                width: 30px;
+                height: 30px;
+                margin-right: 12px;
+                border: 2px solid var(--color-bg);
+                display: inline;
+            }
+
+            label {
+                font-size: 32px;
+                display: inline;
+            }
+
+        }
+
+        .visa-row {
+            display: flex;
+            gap: 2rem;
+
+            #expiry-date,
+            #cvv {
+                width: 169px;
+                text-align: center;
+            }
+        }
+
+        .fawry-info {
+            display: none;
+
+            .error {}
+
+            input {
+                margin-top: 0.5rem;
+                font-size: 32px;
+
+                &::placeholder {
+                    color: var(--color-bg);
+                    text-align: center;
+                }
+            }
+        }
+
+        .back-btn,
+        .submit-btn {
+            height: 59px;
+            border: 2px solid #009589;
+            font-size: 32px;
+            border-radius: 16px;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            -ms-border-radius: 16px;
+            -o-border-radius: 16px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+        }
+
+        .back-btn {
+            width: 171px;
+            color: var(--color-bg);
+            background-color: white;
+            margin-right: 2rem;
+
+            &:hover {
+                color: white;
+                background-color: var(--color-bg);
+            }
+        }
+
+        .submit-btn {
+            width: 568px;
+            color: white;
+            background-color: var(--color-bg);
+
+            &:hover {
+                color: var(--color-bg);
+                background-color: white;
+            }
+        }
+    }
+}
+
+
+@include breakPoints (large) {
+    .home-page {
+        .welcome-sec {
+            top: -2px;
+
+
+            .content {
+                .cont {
+                    width: 95%;
+                    @include layout;
+                    justify-content: space-between;
+
+                    .left {
+                        width: 41%;
+
+                        h1 {
+                            font-size: 50px;
+                        }
+
+                        p {
+                            font-size: 30px;
+                            line-height: 2.3rem;
+                        }
+
+                        button {
+                            width: 300px;
+                            height: 50px;
+                            font-size: 26px;
+                            margin-top: 2.5rem;
+                            margin-left: 16rem;
+                        }
+                    }
+
+                    .right {
+                        img {
+                            width: 450px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .profit-sec {
+
+            .flex-profit-section {
+                .left {
+
+                    .ribbon {
+                        font-size: 50px;
+
+                        width: 900px;
+
+                    }
+
+
+                    ol {
+                        // width: 652px;
+
+                        li {
+                            font-size: 28px;
+
+                            margin-bottom: 34px;
+                        }
+                    }
+                }
+
+                .right {
+                    width: 45%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        section {
+            margin: 4rem 6rem;
+
+            .row {
+                .col {
+                    width: calc(100% / 3 - 30px);
+
+                    align-items: center;
+                    padding: 0.5rem 1rem;
+
+                    h3 {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 32px;
+                    }
+
+                    a {
+                        margin-left: 0.5rem;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .numbers {
+            padding: 4rem;
+
+            h2 {
+                font-size: 50px;
+            }
+
+            .row {
+                width: 900px;
+
+                span {
+                    color: #006E7C;
+                    font-size: 40px;
+                    font-weight: 800;
+
+                    span {
+                        font-size: 30px;
+                    }
+                }
+
+                h3 {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .paying {
+
+            label {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 28px;
+            }
+
+            input {
+                border-bottom: 1.5px solid var(--color-bg);
+                width: 550px;
+            }
+
+            .row {
+                img {
+                    width: 300px;
+                }
+            }
+
+            .radio-btn {
+
+                div {
+                    width: 280px;
+                }
+
+                input {
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 10px;
+                }
+
+                label {
+                    font-size: 28px;
+                }
+
+            }
+
+            .visa-row {
+
+                #expiry-date,
+                #cvv {
+                    width: 140px;
+                }
+            }
+
+            .fawry-info {
+                input {
+                    font-size: 28px;
+                }
+            }
+
+            .back-btn,
+            .submit-btn {
+                height: 50px;
+                border: 1px solid #009589;
+                font-size: 28px;
+            }
+
+            .back-btn {
+                width: 150px;
+                margin-right: 2rem;
+            }
+
+            .submit-btn {
+                width: 470px;
+            }
+        }
+    }
+}
+
+@include breakPoints (medium) {
+
+    .home-page {
+        .welcome-sec {
+            .content {
+                .cont {
+                    .left {
+                        width: 40%;
+
+                        h1 {
+                            font-size: 40px;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            line-height: 1.6rem;
+                        }
+
+                        button {
+                            width: 260px;
+                            height: 50px;
+                            font-size: 24px;
+                            margin-top: 1rem;
+                            margin-left: 8rem;
+                        }
+                    }
+
+                    .right {
+                        img {
+                            width: 330px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .profit-sec {
+            margin: 2rem;
+
+            .flex-profit-section {
+                .left {
+
+                    .ribbon {
+                        font-size: 36px;
+                        width: 700px;
+                    }
+
+
+                    ol {
+
+                        // width: 500px;
+                        li {
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                            padding-left: 50px;
+
+                            &::before {
+                                left: 5px;
+                                top: 10px;
+                                width: 30px;
+                                height: 30px;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+
+                    .right {
+                        width: 45%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            section {
+                margin: 4rem 3rem;
+
+                .row {
+                    .col {
+                        width: calc(100% / 3);
+                        height: 570px;
+                        padding: 0.5rem 0.5rem;
+                        align-items: center;
+
+                        h3 {
+                            font-size: 28px;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            line-height: 28px;
+                        }
+
+                        img {
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+
+            .numbers {
+                padding: 3rem;
+
+                h2 {
+                    font-size: 40px;
+                }
+
+                .row {
+                    width: 750px;
+
+                    span {
+                        color: #006E7C;
+                        font-size: 40px;
+                    }
+
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .paying {
+
+                label {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 22px;
+                }
+
+                input {
+                    border-bottom: 1.5px solid var(--color-bg);
+                    width: 350px;
+                }
+
+                .row {
+                    img {
+                        width: 220px;
+                    }
+                }
+
+                .radio-btn {
+
+                    div {
+                        width: 140px;
+                    }
+
+                    input {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 6px;
+                    }
+
+                    label {
+                        font-size: 22px;
+                    }
+
+                }
+
+                .visa-row {
+
+                    #expiry-date,
+                    #cvv {
+                        width: 140px;
+                    }
+                }
+
+                .fawry-info {
+                    input {
+                        font-size: 24px;
+                    }
+                }
+
+                .back-btn,
+                .submit-btn {
+                    height: 40px;
+                    border: 1px solid #009589;
+                    font-size: 22px;
+                }
+
+                .back-btn {
+                    width: 110px;
+                    margin-right: 1.5rem;
+                }
+
+                .submit-btn {
+                    width: 350px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@use '../../index.scss' as *;
+@use '../../App.scss' as *;
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+
+    .left {
+        max-width: 50%;
+        .title {
+            display: flex;
+            align-items: flex-end;
+            gap: 16px;
+            margin-bottom: 28px;
+
+            h2 {
+                font-family: Source Serif Pro;
+                font-size: 55px;
+                background: linear-gradient(180deg, #00485E 0%, #009589 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            span {
+                font-size: 18px;
+                font-weight: 400;
+                color: var(--color-text);
+            }
+        }
+        p {
+            color: var(--color-text);
+        }
+    }
+    .right {
+        width: 45%;
+        img {
+            width: 100%;
+            top: 208px;
+            left: 1142px;
+        }
+    }
+}

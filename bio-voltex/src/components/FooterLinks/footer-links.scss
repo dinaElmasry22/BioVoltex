@@ -5,11 +5,11 @@
 
 
 .footer-links {
-    margin: 6rem 3rem;
 
     .logo {
         @include linkStyle;
         margin-right: 20px;
+
         font: {
             family: var(--logo-text);
             size: 36px;
@@ -31,6 +31,7 @@
             margin: {
                 top: 20px;
                 bottom: 20px;
+                background-color: var(--color-bg);
             }
 
             ;
@@ -50,8 +51,17 @@
             a {
                 @include linkStyle;
                 color: var(--color-subtext);
+                transition: .4s all;
+                -webkit-transition: .4s all;
+                -moz-transition: .4s all;
+                -ms-transition: .4s all;
+                -o-transition: .4s all;
+                &:hover{
+                    color: var(--color-text);
+                }
+                
+                
             }
-
         }
     }
 
