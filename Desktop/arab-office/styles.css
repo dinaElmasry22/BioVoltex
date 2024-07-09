@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body header .lang {
+  margin-bottom: 22px;
+}
+body header .lang input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  margin-right: 20px;
+}
+body header .lang label {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  background: #11B5EA;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+body header .lang label::after {
+  content: "En";
+  font-size: 13px;
+  text-align: center;
+  color: #7d7d7d;
+  position: absolute;
+  top: 2.5px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+body header .lang input:checked + label {
+  background: #11B5EA;
+}
+body header .lang input:checked + label::after {
+  content: "Ar";
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+}
+body header .lang label:active::after {
+  width: 40px;
+}
+body header .social-media i {
+  color: #11B5EA;
+  font-size: 20px;
+  margin-right: 5px;
+}
+body main .home {
+  width: 100%;
+  height: 90vh;
+}
+body main section h2 {
+  color: #11B5EA;
+}
+body main section .card {
+  margin: 0px 10px;
+  padding: 0;
+}
+body main section .card img {
+  width: 100%;
+  height: 250px;
+}
+body footer {
+  background-color: #024160;
+}
+body footer h3 {
+  margin-bottom: 28px;
+}
+body footer .links a {
+  color: #11B5EA;
+  padding: 3px;
+  transition: 0.2s;
+}
+body footer .links a:hover {
+  color: #93e4ff;
+}
+body footer .social-media i {
+  margin: 14px;
+  font-size: 24px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  color: #fff;
+}
+body footer .social-media i:hover {
+  color: #11B5EA;
+}/*# sourceMappingURL=styles.css.map */
